@@ -1,5 +1,8 @@
 package Array;
 
 public class MInMixArray {
-    git
+
+    public static void main(String[] args) {
+
+    }
 }
