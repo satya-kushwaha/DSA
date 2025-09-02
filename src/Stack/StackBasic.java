@@ -9,7 +9,7 @@ public class StackBasic {
     //Using Vector implimations
 //    Vector<Integer> num = new Vector();
     //Using list Vector implimeation
-    List l = new List();
+
     LinkedList<Integer> num = new LinkedList<>();
     void push(int n){  //O(1)
          num.add(n);
