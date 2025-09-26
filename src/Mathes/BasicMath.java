@@ -96,7 +96,27 @@ public class BasicMath {
     }
     //Modulo Arithmetics
     public void moduloArith(int n){
+        int mod = 1_000_000_007;  // Commonly used large prime modulo
 
+        int a = n;
+        int b = n + 5;
+
+        // Modular addition
+        int modAdd = (a + b) % mod;
+
+        // Modular subtraction (handle negative values)
+        int modSub = ((a - b) % mod + mod) % mod;
+
+        // Modular multiplication
+        long modMul = ((long) a * b) % mod;
+
+        // Modular exponentiation (a^b % mod)
+//        long modExp = modPow(a, b, mod);
+
+        System.out.println("Modular Addition: " + modAdd);
+        System.out.println("Modular Subtraction: " + modSub);
+        System.out.println("Modular Multiplication: " + modMul);
+//        System.out.println("Modular Exponentiation: " + modExp);
     }
 
     public static void main(String[] args) {

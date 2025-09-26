@@ -34,6 +34,7 @@ public class SearchIn2DArray {
         for(int i=0;i<row;i++){
             for(int j=0;j<colum;j++){
                 arr[i][j]=s.nextInt();
+                System.out.println(i+"\t"+j);
             }
         }
         int m =arr.length,n=arr[0].length;
