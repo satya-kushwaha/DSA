@@ -14,7 +14,7 @@ public class BinaryT {
             this.right = null;
         }
     }
-    static class binaryTree{
+    static class BinaryTree {
         static  int indx = -1;
         public static Node buildTree(int node[]){
             indx++;
@@ -55,6 +55,7 @@ public class BinaryT {
         postOrder(root.right);
         System.out.print(root.data+"->");
     }
+
     //Level Order Traversal (VVI)
     public static  void levelOrder(Node root){
         if(root == null){
@@ -188,10 +189,10 @@ public class BinaryT {
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         int subtree[]={5,-1,-1};//wrong1
-        binaryTree b = new binaryTree();
-        Node root = binaryTree.buildTree(nodes);
+        BinaryTree b = new BinaryTree();
+        Node root = BinaryTree.buildTree(nodes);
 //        Node subtre = binaryTree.buildTree(subtree);//wrong 2
-//        System.out.println(root.data);
+        System.out.println(root.data);
 //        preOrder(root);
 //        inorderT(root);
 //        postOrder(root);

@@ -8,7 +8,8 @@ public class ProductOfArrayES {
         int[] nums={1,2,3,4};//ans = {24,12,8,6}
         int[] ans = new int[nums.length];
         int a=1;
-        //Brute Force
+
+        //Brute Force time complexity n^2
      /*   for(int i=0;i<nums.length;i++){
             int product=1;
             for(int j=0;j<nums.length;j++){

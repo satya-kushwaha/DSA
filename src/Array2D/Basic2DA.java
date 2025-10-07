@@ -20,6 +20,7 @@ public class Basic2DA {
         int[][] arr =new int[3][4];
         int row=3,colume=4;
         Scanner s = new Scanner(System.in);
+        System.out.println("Enter a Array element ");
         for(int i=0;i<row;i++){
             for(int j=0;j<colume;j++){
                 arr[i][j]=s.nextInt();

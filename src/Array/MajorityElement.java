@@ -9,8 +9,10 @@ import java.util.Map;
 public class MajorityElement {
 
     public static void main(String[] args) {
-        int[] arr={1,2,3,3,3,3,3,1,1,1};
+        int[] arr={1,2,3,3,3,1,1,1};
         int n = arr.length;
+
+        int fre=1,an=0;
         //Brute force O(n^2)
 /*        for(int i=0;i<n;i++){
             int freq=1;
@@ -24,11 +26,12 @@ public class MajorityElement {
                 return;
             }
         }*/
+
        //sort O(n log n)
         Arrays.sort(arr);
         int ans=0;
         int frequancy=1;
-        for(int i=1;i<n;i++){
+     /*   for(int i=1;i<n;i++){
             if(arr[i] == arr[i-1]){
                 frequancy++;
             }else {
@@ -38,10 +41,10 @@ public class MajorityElement {
             if(frequancy> n/2){
 
             }
-        }
+        }*/
         //Moore's voting Algorithm O(n)
-//        int frequancy =1, ans = 0;
-/*        for(int i=0;i< arr.length;i++){
+/*        int frequancy =1, ans = 0;
+        for(int i=0;i< arr.length;i++){
             if(frequancy == 1){
                 ans=arr[i];
             }
@@ -49,7 +52,7 @@ public class MajorityElement {
                 frequancy++;
             }
             else {frequancy--;}
-        }*/
-        System.out.println("Frequancy "+ans);
+        }
+        System.out.println("Frequancy "+ans);*/
     }
 }

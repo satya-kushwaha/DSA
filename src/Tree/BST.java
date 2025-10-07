@@ -40,15 +40,8 @@ public class BST {
                 return searchInBST(root.right,key);//right subtree
             }
         }
-        public static void inOderT(Node root){
-            if (root == null){
-                return;
-            }
-            inOderT(root.left);
-            System.out.print(root.data+" ");
-            inOderT(root.right);
-        }
-    }//Deletion of Node
+    }
+    //Deletion of Node
     public static Node deleteNode(Node root,int val){
         if(root == null){
             return null;
@@ -75,6 +68,11 @@ public class BST {
         }
         return root;
     }
+    public static void inOderT(Node root){
+        inOderT(root.left);
+        System.out.print(root.data+" ");
+        inOderT(root.right);
+    }
     public static Node inOrderSuc(Node root){
         while (root.left != null){
             root = root.left;
@@ -82,12 +80,6 @@ public class BST {
        return  root;
     }
     //Root of left path
-    public static void printPaht(ArrayList<Integer> path){
-        for(int i=0;i<path.size();i++){
-            System.out.print(path.get(i)+"->");
-        }
-        System.out.println();
-    }
     public static  void  printRoot2Leaf(Node root,ArrayList<Integer> path){
         if(root == null){
             return;
@@ -101,6 +93,12 @@ public class BST {
             printRoot2Leaf(root.right,path);
         }
         path.remove(path.size()-1);
+    }
+    public static void printPaht(ArrayList<Integer> path){
+        for(int i=0;i<path.size();i++){
+            System.out.print(path.get(i)+"->");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {

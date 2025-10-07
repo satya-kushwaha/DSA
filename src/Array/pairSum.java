@@ -18,7 +18,8 @@ public class pairSum {
                 }
             }
         }*/
-        //log n complexity tow pointer approch
+        //tow pointer approach
+        //log n complexity
         int start=0,end=arrs.length-1;
         int n = arrs.length;
           while (start < end){
